@@ -16,19 +16,26 @@ Citizen.CreateThread(function()
 
             print('^5[ lil.dopeee Otomatik Restart Sistemi ] ^3Sunucu Yeniden Baslatilacaktir. \nIslemi Paslamak Icin Konsola "^0 stop dope-autoRestart" ^3Yazin.')
             Citizen.Wait(10000)
+            sendDiscordAnnouncment("https://discordapp.com/api/webhooks/xyz", "lil.dopeee", "Sunucu Yeniden Başlatılıyor", 65518)
+            Citizen.Wait(1000)
             restartServer ()
 
         elseif utcTime == RestartTimes.Times2 then
 
             print('^5[ lil.dopeee Otomatik Restart Sistemi ] ^3Sunucu Yeniden Baslatilacaktir. \nIslemi Paslamak Icin Konsola "^0 stop dope-autoRestart" ^3Yazin.')
             Citizen.Wait(10000)
+            sendDiscordAnnouncment("https://discordapp.com/api/webhooks/xyz", "lil.dopeee", "Sunucu Yeniden Başlatılıyor", 65518)
+            Citizen.Wait(1000)
             restartServer ()
 
         elseif utcTime == RestartTimes.Times3 then
 
             print('^5[ lil.dopeee Otomatik Restart Sistemi ] ^3Sunucu Yeniden Baslatilacaktir. \nIslemi Paslamak Icin Konsola "^0 stop dope-autoRestart" ^3Yazin.')
             Citizen.Wait(10000)
+            sendDiscordAnnouncment("https://discordapp.com/api/webhooks/xyz", "lil.dopeee", "Sunucu Yeniden Başlatılıyor", 65518)
+            Citizen.Wait(1000)
             restartServer ()
+
 
         elseif utcTime == RestartTimes.Times4 then
 
@@ -46,7 +53,7 @@ function restartServer ()
     kickAllPlayers()
     Citizen.Wait(1000)
     io.popen(Dope.RestartApplication)
-    Citizen.Wait(100)
+    Citizen.Wait(300)
     os.exit()
 end
 
