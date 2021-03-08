@@ -53,7 +53,7 @@ function restartServer ()
     kickAllPlayers()
     Citizen.Wait(1000)
     io.popen(Dope.RestartApplication)
-    Citizen.Wait(300)
+    Citizen.Wait(100)
     os.exit()
 end
 
