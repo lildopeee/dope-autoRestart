@@ -52,7 +52,7 @@ end)
 function restartServer ()
     kickAllPlayers()
     Citizen.Wait(1000)
-    io.popen("start baslat.bat") -- start tan sonra başlatıcı aplikasyonunuzun adını yazın
+    io.popen("start baslat.bat") -- start tan sonra başlatıcı aplikasyonunuzun adını yazın - Enter your start application after "start"
     Citizen.Wait(300)
     os.exit()
 end
